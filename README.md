@@ -26,17 +26,28 @@ schema = {
     }
 }
 
-research_question = "What is the average age of people in each city?"
+research_question_1 = "What is the {average} {age} of people in each {city}?"
 
 
 // Example output:
-result = {
+result_1 = {
     "type":"descriptive",
     "target_variable":"age",
     "target_variable_type":"numeric",
     "target_variable_unit":"years",
     "stat_action":"mean",
     "group_by":"city",
+}
+
+research_question_2 = "Are there any {significant differences} between the {average} {age} of people in each {city}?"
+
+result_2  = {
+    "type":"comparative",
+    "comparison_variable":"age",
+    "comparison_variable_type":"numeric",
+    "comparison_variable_unit":"years",
+    "comparison_stat_action":"compare_mean",
+    "between":"city"
 }
 ```
 
