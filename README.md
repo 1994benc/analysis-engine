@@ -26,6 +26,8 @@ schema = {
     }
 }
 
+research_question = "What is the average age of people in each city?"
+
 
 // Example output:
 result = {
@@ -33,7 +35,7 @@ result = {
     "target_variable":"age",
     "target_variable_type":"numeric",
     "target_variable_unit":"years",
-    "target_variable_value_type":"average",
+    "stat_action":"mean",
     "group_by":"city",
 }
 ```
