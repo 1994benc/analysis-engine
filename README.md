@@ -7,24 +7,28 @@ This program has 2 main parts.
 ```javascript
 
 // Example input:
-schema = {
-    "city": {
+schema = [
+    {
+        "name": "name",
         "type": "string",
         "null_action": "drop_row"
     },
-    "age": {
+    {
+        "name": "age",
         "type": "number",
         "null_action": "fill_zero"
     },
-    "pid" : {
+    {
+        "name":"city"
         "type": "string",
         "null_action":"drop_row"
     },
-    "interests": {
+    {
+        "name": "interests",
         "type": "array",
         "null_action": "ignore"
     }
-}
+]
 
 research_question_1 = "What is the {average} {age} of people in each {city}?"
 
